@@ -12,8 +12,8 @@ Author URI: http://screenpartner.no/
 class author_box_widget extends WP_Widget {
 
   /** constructor -- name this the same as the class above */
-  function author_box_widget() {
-    parent::WP_Widget(false, $name = 'SP Author Box');
+  function __construct() {
+    parent::__construct(false, $name = 'SP Author Box');
   }
 
   /** @see WP_Widget::widget -- do not rename this */
